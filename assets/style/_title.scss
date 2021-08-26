@@ -1,0 +1,42 @@
+// 20 TEXTO GRANDE LOGO M
+/*
+  8 TEXTO PEQUENO LOGO M
+  14 TEXTO MENU SUPERIOR QUESTRIAL
+
+  39 TEXTO GRANDE LANDING M
+  16 TEXTO PEQUENO LANDING QUESTRIAL
+
+  14 BOTON LANDGING QUESTRIAL 
+
+  20 TEXTO GRANDE HOVER PORTAFOLIO MONS
+  20 TEXTO PEQUENO QUESTRIAL
+
+  14 BOTON PORTAFOLIO QUESTRIAL 
+  14 TEXTO PIE QUESTRIAL
+
+*/ 
+
+h1 {
+  font-size: 39pt;
+}
+h2 {
+  font-size: 20pt;
+}
+h3 {
+  font-size: 16pt;
+}
+h3 {
+  font-size: 14pt;
+}
+
+
+.little-text {
+  font-size: 8pt;
+}
+
+.font-secondary{
+  font-family: $font-secondary;
+}
+.font-main{
+  font-family: $font-main;
+}

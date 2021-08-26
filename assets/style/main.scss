@@ -1,12 +1,24 @@
 
 @import "vars";
-@import "vars";
-@import "title";
 @import "icons";
+@import "elements";
+@import "header";
+@import "title";
+@import "navigation";
+@import "landing";
+@import "portfolio";
 
 
 
-body{
+*{
   font-family : $font-main;
+  font-size: 14pt;
+  font-weight: normal;
+  color: $color-gray-main;
   margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+ list-style-type: none;
 }

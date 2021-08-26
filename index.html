@@ -7,7 +7,7 @@
   <base href="./" target="_blank">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,100;1,600&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
   <link rel="icon" href="assets/images/Logo.png" type="image/icon type">
   <link href="assets/style/main.css" rel="stylesheet" type="text/css" >
@@ -28,40 +28,56 @@
   <!-- <iframe id="jsonData" src="items.json" type="application/json" referrerpolicy="origin" > </iframe> -->
     
   <header>
-    <div>
-      <div>
+    <div class="row header__logo">
+      <div class="column" >
         <img src="./assets/images/Logo.png"/>
       </div>
-      <div>
-        <label>SNEAK</label>
-        <label>CREATIVE PORTFOLIO</label>
+      <div class="column" >
+        <h2>SNEAK</h2>
+        <span class="little-text">CREATIVE PORTFOLIO</span>
       </div>
     </div>
-    <form method="GET">
-      <nav >
+    <form method="GET" class="row header__search-bar" >
+      <nav class="" >
         <ul>  
-          <li>All</li>
-          <li>Brand</li>
-          <li>Web</li>
-          <li>Photography</li>
-          <li>App</li>
+          <li value="All" onclick="filterCategory(this)">All</li>
+          <li value="Branding" onclick="filterCategory(this)">Branding</li>
+          <li value="Web"onclick="filterCategory(this)">Web</li>
+          <li value="Photography" onclick="filterCategory(this)">Photography</li>
+          <li value="App" onclick="filterCategory(this)">App</li>
         </ul>
       </nav>
-      <div>
+      <div  class="row">
+        <button type="submit" class="icon search"><i>search</i></button>
         <input name="q" type="text" id="search_term_text" >
-        <button type="submit"><i>search</i></button>
       </div>
     </form>
   </header>
   <main>
     <section class="landing">
-      <h1>EXPLORE BEYOND HORIZON</h1>
-      <h2>Magna mundi referrentur quo, no rebum dignissim qui. </h2>
-      <h2>Per quodsi accusata id, agam labores.</h2>
-      <button onclick="goToPortfolio()">VIEW OUR WORK</button>
+      <div>
+        <h1 class="font-main" >EXPLORE BEYOND HORIZON</h1>
+        <h3 class="font-secondary">Magna mundi referrentur quo, no rebum dignissim qui. </h3>
+        <h3>Per quodsi accusata id, agam labores.</h3>
+      </div>
+      <button class="landing__button" onclick="goToPortfolio()">VIEW OUR WORK</button>
     </section>
-    <section id="portfolio">
-      <div> <i class="icon box-view"></i> <i class="icon list-view"></i> </div>
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio__icons"> 
+        <i class="icon box-view"></i> 
+        <i class="icon list-view"></i> 
+      </div>
+      <div class="portfolio__category">
+        <nav class="" >
+          <ul>  
+            <li value="All" onclick="filterCategory(this)">All</li>
+            <li value="Branding" onclick="filterCategory(this)">Branding</li>
+            <li value="Web"onclick="filterCategory(this)">Web</li>
+            <li value="Photography" onclick="filterCategory(this)">Photography</li>
+            <li value="App" onclick="filterCategory(this)">App</li>
+          </ul>
+        </nav>
+      </div>
       <section id="portfolio-items">
         
       </section>

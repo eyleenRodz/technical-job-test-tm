@@ -1,0 +1,17 @@
+.portfolio{
+  display: flexbox;
+  flex-direction: column;
+  flex: 3;
+  justify-content: space-around;
+  padding-top: 10vh;
+  &__icons{
+    text-align: center;
+    padding-bottom: 10vh;
+  }
+  &__category{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-bottom: 10vh;
+  }
+}

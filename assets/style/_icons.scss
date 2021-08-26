@@ -30,6 +30,9 @@
   &.list-view {
     background-image:url(../images/ColumnIcon.png);
   }  
+  &.search {
+    background-image:url(../images/SearchIcon.png);
+  }  
 }
 .icon:hover{
   filter: contrast(0);
