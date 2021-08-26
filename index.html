@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="./" target="_blank">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+  <link rel="icon" href="assets/images/Logo.png" type="image/icon type">
+  <link href="assets/style/main.css" rel="stylesheet" type="text/css" >
+  <script src="items.js"></script>
+  <script src="assets/scripts/main.js"></script>
+
+  <title>SNEAK - Creative Portoflio</title>
+  <template id="item-grid"><article index="{{INDEX}}" category="{{CATEGORY}}">
+      <header>
+        <h1>{{TITLE}}</h1>
+        <hr>
+        <h3>{{CATEGORY}}</h3>
+      </header>
+      <img >
+    </article></template>
+</head>
+<body>
+  <!-- <iframe id="jsonData" src="items.json" type="application/json" referrerpolicy="origin" > </iframe> -->
+    
+  <header>
+    <div>
+      <div>
+        <img src="./assets/images/Logo.png"/>
+      </div>
+      <div>
+        <label>SNEAK</label>
+        <label>CREATIVE PORTFOLIO</label>
+      </div>
+    </div>
+    <form method="GET">
+      <nav >
+        <ul>  
+          <li>All</li>
+          <li>Brand</li>
+          <li>Web</li>
+          <li>Photography</li>
+          <li>App</li>
+        </ul>
+      </nav>
+      <div>
+        <input name="q" type="text" id="search_term_text" >
+        <button type="submit"><i>search</i></button>
+      </div>
+    </form>
+  </header>
+  <main>
+    <section class="landing">
+      <h1>EXPLORE BEYOND HORIZON</h1>
+      <h2>Magna mundi referrentur quo, no rebum dignissim qui. </h2>
+      <h2>Per quodsi accusata id, agam labores.</h2>
+      <button onclick="goToPortfolio()">VIEW OUR WORK</button>
+    </section>
+    <section id="portfolio">
+      <div> <i class="icon box-view"></i> <i class="icon list-view"></i> </div>
+      <section id="portfolio-items">
+        
+      </section>
+      <button onclick="showMore()">Show me more</button>
+    </section>
+  </main>
+  <footer>
+    <section>
+      © 2016 - <span>Sneak</span> All Right Reserved
+    </section>
+    <section>
+      <i class="icon social-facebook"></i>
+      <i class="icon social-twitter"></i>
+      <i class="icon social-dribble"></i>
+      <i class="icon social-google"></i>
+      <i class="icon social-youtube"></i>
+    </section>
+  </footer>
+</body>
+</html>

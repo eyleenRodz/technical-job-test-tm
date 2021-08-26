@@ -1,0 +1,36 @@
+.icon {
+  width: 15pt;
+  height: 15pt;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-flex;
+  background-size: contain;
+  @mixin social ($url) {
+    background-image:$url;
+  }
+  
+  &.social-facebook {
+    @include social(url(../images/Facebook.png));
+  }
+  &.social-twitter {
+    @include social(url(../images/Twitter.png));
+  }
+  &.social-google {
+    @include social(url(../images/Google.png));
+  }
+  &.social-dribble {
+    @include social(url(../images/Dribble.png));
+  }
+  &.social-youtube {
+    @include social(url(../images/Youtube.png));
+  }
+  &.box-view {
+    background-image:url(../images/BlockIcon.png);
+  }
+  &.list-view {
+    background-image:url(../images/ColumnIcon.png);
+  }  
+}
+.icon:hover{
+  filter: contrast(0);
+}

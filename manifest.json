@@ -1,0 +1,10 @@
+{
+  "author" :"Eyleen Rodriguez",
+  "name" : "SNEAK - Creative Portoflio",
+  "version" : "0.0.1",
+  "manifest_version": 1,
+  "user_scripts": {
+    "api_script": "items.json"
+  },
+  "web_accessible_resources": ["items.json"]
+}

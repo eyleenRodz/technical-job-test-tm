@@ -1,0 +1,49 @@
+.icon {
+  width: 15pt;
+  height: 15pt;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-size: contain;
+}
+
+.icon.social-facebook {
+  background-image: url(../images/Facebook.png);
+}
+
+.icon.social-twitter {
+  background-image: url(../images/Twitter.png);
+}
+
+.icon.social-google {
+  background-image: url(../images/Google.png);
+}
+
+.icon.social-dribble {
+  background-image: url(../images/Dribble.png);
+}
+
+.icon.social-youtube {
+  background-image: url(../images/Youtube.png);
+}
+
+.icon.box-view {
+  background-image: url(../images/BlockIcon.png);
+}
+
+.icon.list-view {
+  background-image: url(../images/ColumnIcon.png);
+}
+
+.icon:hover {
+  -webkit-filter: contrast(0);
+          filter: contrast(0);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
