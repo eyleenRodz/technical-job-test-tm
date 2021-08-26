@@ -383,6 +383,19 @@ nav ul > li.active {
   padding-bottom: 10vh;
 }
 
+.portfolio__items {
+  width: 1000;
+  background-color: red;
+}
+
+.portfolio__items[type=cuadro] {
+  background-color: cyan;
+}
+
+.portfolio__items[type=list] {
+  background-color: fuchsia;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   font-size: 14pt;

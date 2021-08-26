@@ -79,7 +79,7 @@ function buildItems(items){
   try {
     if ('content' in document.createElement('template')) {
       let template = document.getElementsByTagName("template")[0];
-      let portfolioSection = document.getElementById("portfolio-items");
+      let portfolioSection = document.getElementById("portfolio__items");
       for (const index in items) {
         let contentTemplate = template.content.cloneNode(true);
         let newItem = contentTemplate.firstChild
@@ -141,6 +141,15 @@ function activeFilterCateogry(){
     itemCategory.classList.add('active');
   }
   
+}
+
+/**
+ * Cambia la visualizacion del portafolio 
+ * @param {String} type Tipo de visualizacion. Posibles valores: Cuadro , Lista
+ */
+function changePortfolioView(type){
+  let containerItems = document.querySelector('section#portfolio__items');
+  containerItems.setAttribute("type",type)
 }
 
 window.onload = ()=>{  

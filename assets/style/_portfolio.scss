@@ -14,4 +14,13 @@
     justify-content: center;
     padding-bottom: 10vh;
   }
+  &__items{
+    background-color: red;
+    &[type=cuadro]{
+      background-color: cyan;
+    }
+    &[type=list]{
+      background-color: fuchsia;
+    }
+  }
 }

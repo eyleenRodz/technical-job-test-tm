@@ -64,8 +64,8 @@
     </section>
     <section id="portfolio" class="portfolio">
       <div class="portfolio__icons"> 
-        <i class="icon box-view"></i> 
-        <i class="icon list-view"></i> 
+        <i class="icon box-view" onclick="changePortfolioView('cuadro')"></i> 
+        <i class="icon list-view" onclick="changePortfolioView('lista')"></i> 
       </div>
       <div class="portfolio__category">
         <nav class="" >
@@ -78,7 +78,7 @@
           </ul>
         </nav>
       </div>
-      <section id="portfolio-items">
+      <section id="portfolio__items" class="portfolio__items" type="cuadro">
         
       </section>
       <button onclick="showMore()">Show me more</button>
