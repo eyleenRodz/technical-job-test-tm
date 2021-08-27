@@ -11,22 +11,27 @@
 
 .icon.social-facebook {
   background-image: url(../images/Facebook.png);
+  cursor: pointer;
 }
 
 .icon.social-twitter {
   background-image: url(../images/Twitter.png);
+  cursor: pointer;
 }
 
 .icon.social-google {
   background-image: url(../images/Google.png);
+  cursor: pointer;
 }
 
 .icon.social-dribble {
   background-image: url(../images/Dribble.png);
+  cursor: pointer;
 }
 
 .icon.social-youtube {
   background-image: url(../images/Youtube.png);
+  cursor: pointer;
 }
 
 .icon.box-view {

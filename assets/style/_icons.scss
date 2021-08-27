@@ -7,6 +7,7 @@
   background-size: contain;
   @mixin social ($url) {
     background-image:$url;
+    cursor: pointer;
   }
   
   &.social-facebook {
