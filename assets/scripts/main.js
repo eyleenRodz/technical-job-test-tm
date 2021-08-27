@@ -10,9 +10,9 @@ function goToPortfolio(){
 function filterCategory(e){
   let value = e.getAttribute('value');
   if(value!="All"){
-    document.location.href=document.location.href.split("?")[0]+"?cat="+value;
+    document.location.href=document.location.href.split("#")[0].split("?")[0]+"?cat="+value;
   }else{
-    document.location.href=document.location.href.split("?")[0]
+    document.location.href=document.location.href.split("#")[0].split("?")[0]
   }
 }
 

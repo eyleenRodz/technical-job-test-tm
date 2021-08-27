@@ -294,7 +294,10 @@ nav ul > li {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0px 30px;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -412,6 +415,7 @@ nav ul > li.active {
   display: -ms-flexbox;
   display: flex;
   padding: 0 4px;
+  position: relative;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 860px) {
@@ -436,8 +440,49 @@ nav ul > li.active {
   vertical-align: middle;
 }
 
+.portfolio__items__item:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio__items__item:hover figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .portfolio__items__item__figcaption {
   display: none;
+  background-color: #ff5672;
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+.portfolio__items__item__figcaption * {
+  color: #fff;
+  letter-spacing: 1pt;
+}
+
+.portfolio__items__item__figcaption h2 {
+  letter-spacing: 2pt;
+}
+
+.portfolio__items__item__figcaption hr {
+  margin: 5px 20px;
 }
 
 .portfolio__button {

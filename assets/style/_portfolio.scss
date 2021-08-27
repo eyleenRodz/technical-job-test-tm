@@ -36,14 +36,43 @@
       }
       
       padding: 0 4px;
-
+      position: relative;
       &__image{
         width: 100%;
         margin-top: 8px;
         vertical-align: middle;
       }
+      &:hover{
+        display: flex;
+        figcaption {
+          display: flex;
+        }
+      }
       &__figcaption{
         display: none;
+        background-color: $color-pink-main;
+        filter: opacity(0.9);
+        
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        
+        position: absolute;
+        *{          
+          color: $color-pink-contrast;
+          letter-spacing: 1pt;
+        }
+        h2 {
+          letter-spacing: 2pt;
+        }
+        hr{
+          margin: 5px 20px;
+        }
       }
     }
   }
