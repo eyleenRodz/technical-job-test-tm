@@ -1,5 +1,5 @@
 .portfolio{
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   flex: 3;
   justify-content: space-around;
@@ -15,12 +15,47 @@
     padding-bottom: 10vh;
   }
   &__items{
-    background-color: red;
-    &[type=cuadro]{
-      background-color: cyan;
+    @media only screen and (min-width:860px){
+      margin-inline: 15%;
     }
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
     &[type=list]{
-      background-color: fuchsia;
+      flex-flow: column nowrap;
+    }
+    &__item{
+      display: flex;
+      @media only screen and (min-width:320px) and (max-width:860px){
+        flex:40%;
+      }
+      @media only screen and (min-width:860px){
+        flex:30%;
+      }
+      
+      padding: 0 4px;
+
+      &__image{
+        width: 100%;
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      &__figcaption{
+        display: none;
+      }
+    }
+  }
+  &__button{
+    margin-top: 5vh;
+    align-self: center;
+    background-color: $color-pink-main;
+    color: $color-pink-contrast;
+    padding: 15px 30px;
+    border: none;
+    &:hover{
+      filter: grayscale(1);
     }
   }
 }

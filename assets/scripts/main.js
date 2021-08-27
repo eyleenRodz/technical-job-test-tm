@@ -1,7 +1,7 @@
 
 let itemsPortfolio  = [] //Almacena los json guardados. 
 let currentPage = 0 // Pagina actual de paginado.
-const totalItemsPerPage = 1 //Total de itemes que se muestran por pagina
+const totalItemsPerPage = 7 //Total de itemes que se muestran por pagina
 
 
 function goToPortfolio(){
@@ -83,11 +83,18 @@ function buildItems(items){
       for (const index in items) {
         let contentTemplate = template.content.cloneNode(true);
         let newItem = contentTemplate.firstChild
+        //Adding  title and  category attributes
         newItem.setAttribute("category", items[index].category)
         newItem.setAttribute("index", index)
-        let articlehtmttext = newItem.innerHTML
+        let figurehtmttext = newItem.innerHTML
+        //Adding text title and text category
+        newItem.innerHTML = figurehtmttext.replace("{{TITLE}}", items[index].title).replace("{{CATEGORY}}", items[index].category)
         
-        newItem.innerHTML = articlehtmttext.replace("{{TITLE}}", items[index].title).replace("{{CATEGORY}}", items[index].category)
+        //Adding image 
+        let image = newItem.getElementsByTagName("img")[0];
+        image.src = items[index].image
+        
+        //Adding the new item to the html
         portfolioSection.appendChild(newItem)
       }
     }else{alert(1)}

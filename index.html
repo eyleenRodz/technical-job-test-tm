@@ -15,17 +15,16 @@
   <script src="assets/scripts/main.js"></script>
 
   <title>SNEAK - Creative Portoflio</title>
-  <template id="item-grid"><article index="{{INDEX}}" category="{{CATEGORY}}">
-      <header>
+  <template id="item-grid"><figure class="portfolio__items__item" index="" category="">
+      <img class="portfolio__items__item__image">
+      <figcaption class="portfolio__items__item__figcaption">
         <h1>{{TITLE}}</h1>
         <hr>
         <h3>{{CATEGORY}}</h3>
-      </header>
-      <img >
-    </article></template>
+      </figcaption>
+    </figure></template>
 </head>
 <body>
-  <!-- <iframe id="jsonData" src="items.json" type="application/json" referrerpolicy="origin" > </iframe> -->
     
   <header>
     <div class="row header__logo">
@@ -65,7 +64,7 @@
     <section id="portfolio" class="portfolio">
       <div class="portfolio__icons"> 
         <i class="icon box-view" onclick="changePortfolioView('cuadro')"></i> 
-        <i class="icon list-view" onclick="changePortfolioView('lista')"></i> 
+        <i class="icon list-view" onclick="changePortfolioView('list')"></i> 
       </div>
       <div class="portfolio__category">
         <nav class="" >
@@ -81,7 +80,7 @@
       <section id="portfolio__items" class="portfolio__items" type="cuadro">
         
       </section>
-      <button onclick="showMore()">Show me more</button>
+      <button class="portfolio__button" onclick="showMore()">Show me more</button>
     </section>
   </main>
   <footer>
