@@ -23,6 +23,7 @@ nav {
     padding: 0 30px;
     display: flex;
     flex: 1;
+    cursor: pointer;
     &:hover {
       background-color: $color-pink-main;
       color: white;

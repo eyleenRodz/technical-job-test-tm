@@ -7,6 +7,7 @@
   &__icons{
     text-align: center;
     padding-bottom: 10vh;
+    cursor: pointer;
   }
   &__category{
     display: flex;
@@ -83,6 +84,7 @@
     color: $color-pink-contrast;
     padding: 15px 30px;
     border: none;
+    cursor: pointer;
     &:hover{
       filter: grayscale(1);
     }
